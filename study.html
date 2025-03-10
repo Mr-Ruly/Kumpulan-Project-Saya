@@ -12,70 +12,50 @@
         }
         body {
             font-family: 'Arial', sans-serif;
-            background: url('https://i.pinimg.com/474x/ba/5e/b2/ba5eb2e7915eb2c915f10f5a2a05a685.jpg') no-repeat center center/cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            position: relative;
-        }
-        /* Overlay agar teks lebih terlihat */
-        body::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 1;
+            background-color: #f7f7f7;
+            padding: 20px;
         }
         .container {
-            position: relative;
-            z-index: 2;
             max-width: 700px;
-            background: rgba(255, 255, 255, 0.2); /* Transparan */
+            background: white;
             padding: 30px;
             border-radius: 12px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            margin: auto;
             font-size: 1.1em;
-            backdrop-filter: blur(10px); /* Efek kaca */
-            color: white;
-            border: 2px solid rgba(255, 255, 255, 0.3);
         }
         h2 {
             text-align: center;
             margin-bottom: 25px;
-            color: #ffffff;
+            color: #5c6bc0;
             font-size: 2em;
             font-weight: bold;
         }
         .education {
-            background: rgba(255, 255, 255, 0.2); /* Semi transparan */
+            background: #f1f8e9;
             padding: 20px;
-            border-left: 5px solid #ffcc00;
+            border-left: 5px solid #5c6bc0;
             margin-bottom: 20px;
             border-radius: 8px;
             transition: all 0.3s ease;
-            backdrop-filter: blur(8px);
         }
         .education:hover {
-            background: rgba(255, 255, 255, 0.3);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            background: #e8f5e9;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             transform: translateX(10px);
         }
         .education h3 {
-            color: #ffffff;
+            color: #3e4a59;
             font-size: 1.4em;
             margin-bottom: 5px;
         }
         .education p {
-            color: #e0e0e0;
+            color: #555;
             font-size: 1em;
         }
         .education span {
             font-weight: bold;
-            color: #ffcc00;
+            color: #5c6bc0;
         }
     </style>
 </head>
