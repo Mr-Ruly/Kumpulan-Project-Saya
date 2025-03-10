@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RulyDev</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            font-family: 'Poppins', sans-serif;
+            background: black !important;
+            color: white; /* Agar teks tetap terbaca */
+        }
+        .header {
+            background: linear-gradient(to right, #0e0e0e, #0e0e0e);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .nav-menu {
+            background: rgb(16, 16, 16);
+            padding: 10px;
+            box-shadow: 0px 4px 10px rgba(11, 11, 11, 0.1);
+        }
+        .navbar-nav .nav-link {
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        .navbar-nav .nav-link:hover {
+            background: #1e88e5;
+            color: rgb(247, 246, 246) !important;
+            border-radius: 5px;
+        }
+        .navbar-toggler {
+             border-color: white;
+            }
+        .content {
+            background: linear-gradient(to right, #f4f4f4, #0f0f0f);
+            color: white;
+            padding: 20px;
+            text-align: left;
+        }
+        .sidebar {
+             min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            }
+        @media (max-width: 768px) {
+        .sidebar {
+        height: auto;
+        overflow-y: auto;
+         }
+            }
+
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background: #0d0d0d;
+            border-radius: 5px;
+        }
+        .main-content {
+            padding: 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            background: #0c0c0c;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .carousel-img {
+    width: 100%;
+    max-height: 70vh; /* Membatasi tinggi maksimum agar tidak terlalu besar */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+}
+@media (max-width: 768px) {
+    .carousel-img {
+        max-height: 50vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-img {
+        max-height: 40vh;
+    }
+}
+ .sidebar, .nav-menu, .footer, .content {
+    background: black !important;
+    color: white !important;
+}
+.footer,.btn-dark,.bg-dark {
+    background-color: black !important;
+}
+
+
+    </style>
+</head>
+<body>    
+    
+    <div class="container-fluid">
+        <!-- Header with Carousel -->
+        <div class="row">
+            <div class="col-12 header">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://i.pinimg.com/474x/2d/46/82/2d46822e14a404c825e8e17591602f83.jpg" class="carousel-img" alt="Banner 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://i.pinimg.com/474x/58/93/92/58939247ffdff6f55c093bcb1e971972.jpg" class="carousel-img" alt="Banner 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://i.pinimg.com/474x/67/57/5f/67575ffc44eed3ea3e51bbbe4eb70c6a.jpg" class="carousel-img" alt="Banner 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        
+        <!-- Navigation Menu -->
+<div class="row">
+    <div class="col-12 nav-menu">
+        <nav class="navbar navbar-expand-lg navbar-balck bg-white">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="https://i.pinimg.com/474x/e3/a8/60/e3a8602aa4b363bd028a11898ec65761.jpg" 
+                         style="max-width: 200px;" alt="Logo">
+                </a>
+
+                <!-- Tombol Hamburger -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu Navbar -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-primary mx-1 fw-bold" href="utama.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-primary mx-1 fw-bold" href="main.html">Tentang Saya</a>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-success mx-1 fw-bold" href="study.html">MyStudy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-warning mx-1 fw-bold" href="galery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-info mx-1 fw-bold" href="datatables.html">Datatable</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-danger mx-1 fw-bold" href="form-login.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<!-- Tambahkan Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        
+        <!-- Content & Main Content -->
+        <div class="row">
+            <div class="col-md-3 bg-dark text-white h-100 d-flex flex-column">
+                <div class="btn-group-vertical flex-grow-1">
+                    <a href="https://www.hacktiv8.com/full-stack-javascript-immersive" class="btn btn-dark" onclick="loadPage(event, this.href)">Belajar Fullstack With Hacktiv8</a>
+                    <a href="https://www.udemy.com/id/topic/full-stack-web-development/?srsltid=AfmBOopp1bMgUt3pHC0dLeQkVogiAWssq_BNsh6pWwE4UG7ZIMgMep9y" class="btn btn-dark" onclick="loadPage(event, this.href)">Belajar FullStack With Udemy </a>
+                    <a href="https://www.codepolitan.com/roadmap/menjadi-fullstack-web-developer/" class="btn btn-dark" onclick="loadPage(event, this.href)">Belajar FullStack With CodePolitan</a>
+                    <a href="https://www.kelasfullstack.id/" class="btn btn-dark" onclick="loadPage(event, this.href)">Belajar Fullstack With kelasFullstack</a>
+                    <a href="https://nfacademy.id" class="btn btn-dark" onclick="loadPage(event, this.href)">Belajar Fullstack With NFAcademy</a>
+                    <a href="https://nurulfikri.ac.id" class="btn btn-dark" onclick="loadPage(event, this.href)">Belajar Fullstack With NurulFikri</a>
+                </div>
+            </div>
+            
+            <div class="col-md-9 main-content bg-light">
+                <iframe id="main-frame" src="utama.html" style="width: 100%; height: 100vh; border: none;"></iframe>
+            </div>
+        </div>
+        
+        <script>
+            function loadPage(event, url) {
+                event.preventDefault(); // Mencegah tautan membuka halaman baru
+                document.getElementById('main-frame').src = url; // Mengubah sumber iframe
+            }
+        </script>
+        
+        <!-- Footer -->
+        <div class="col-12 footer text-center py-3 bg-light">
+            <p class="mb-2">&copy; 2025 RulyDev Universitas Bhayangkara Jakarta Raya</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="https://dwglogo.com/wp-content/uploads/2016/06/facebook_emblem.png" alt="Facebook" width="30" height="30"> 
+                    Rully Barnebo
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                    <img src="https://i.pinimg.com/474x/fc/84/f8/fc84f807aecad21d5db2f6348e2522cb.jpg" alt="Twitter" width="50" height="30"> 
+                    RulyS
+                </a>
+                <a href="https://www.instagram.com/rulys_11" target="_blank">
+                    <img src="https://talestin.com/wp-content/uploads/2023/04/new-Instagram-logo-png-full-colour-glyph-1024x1024.png" 
+                         alt="Instagram" width="30" height="30"> 
+                    rulys_11
+                </a>
+                <a href="https://www.threads.net/@rulys_11" target="_blank">
+                    <img src="https://i.pinimg.com/474x/9f/46/de/9f46dea1ec01fe5b1cca5213cfb4a3b1.jpg" 
+                         alt="Threads" width="30" height="30"> 
+                    rulys_11
+                </a>
+                
+                
+                
+        </div>
+    </div>
+</div>
+
+    
+
+    <script>
+        document.querySelectorAll(".nav-link").forEach(link => {
+            link.addEventListener("click", function(event) {
+                event.preventDefault();
+                let targetPage = this.getAttribute("href");
+                document.getElementById("main-frame").src = targetPage + "?t=" + new Date().getTime();
+            });
+        });
+        
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>   
+</body>
+</html>

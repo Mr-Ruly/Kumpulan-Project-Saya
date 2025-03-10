@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riwayat Pendidikan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('https://i.pinimg.com/474x/ba/5e/b2/ba5eb2e7915eb2c915f10f5a2a05a685.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+        /* Overlay agar teks lebih terlihat */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .container {
+            position: relative;
+            z-index: 2;
+            max-width: 700px;
+            background: rgba(255, 255, 255, 0.2); /* Transparan */
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            font-size: 1.1em;
+            backdrop-filter: blur(10px); /* Efek kaca */
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #ffffff;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .education {
+            background: rgba(255, 255, 255, 0.2); /* Semi transparan */
+            padding: 20px;
+            border-left: 5px solid #ffcc00;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(8px);
+        }
+        .education:hover {
+            background: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transform: translateX(10px);
+        }
+        .education h3 {
+            color: #ffffff;
+            font-size: 1.4em;
+            margin-bottom: 5px;
+        }
+        .education p {
+            color: #e0e0e0;
+            font-size: 1em;
+        }
+        .education span {
+            font-weight: bold;
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Riwayat Pendidikan</h2>
+        <div class="education">
+            <h3>Universitas Bhayangkara Jakarta Raya</h3>
+            <p><span>Program Studi:</span> Teknik Informatika</p>
+            <p><span>Periode:</span> 2022 - Sekarang</p>
+        </div>
+        <div class="education">
+            <h3>SMA Bani Saleh Bekasi</h3>
+            <p><span>Jurusan:</span> IPA</p>
+            <p><span>Periode:</span> 2018 - 2021</p>
+        </div>
+        <div class="education">
+            <h3>SMP Negeri 3 Bekasi</h3>
+            <p><span>Periode:</span> 2015 - 2018</p>
+        </div>
+        <div class="education">
+            <h3>SD Negeri 1 Bekasi</h3>
+            <p><span>Periode:</span> 2009 - 2015</p>
+        </div>
+    </div>
+</body>
+</html>
